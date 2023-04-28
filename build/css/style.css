@@ -3108,8 +3108,8 @@ body {
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff;
-  background-color: #0c0e1c;
+  color: #1f1e1e;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth; }
@@ -3157,6 +3157,21 @@ input:invalid {
 
 /* Форма */
 /* Блоки */
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media (max-width: 1250px) {
+    .container {
+      padding: 0 40px; } }
+  @media (max-width: 1023px) {
+    .container {
+      padding: 0 30px; } }
+  @media (max-width: 479px) {
+    .container {
+      padding: 0 20px; } }
+
 /* Шапка */
 /* Подвал */
 /* Карточка товара */
