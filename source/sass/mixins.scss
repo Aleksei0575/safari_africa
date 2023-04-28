@@ -1,0 +1,110 @@
+// Desktop first
+
+@mixin viewport--xl {
+  @media (max-width: $viewport--xxl - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--lav {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin viewport--mav {
+  @media (max-width: 1135px) {
+    @content;
+  }
+}
+
+@mixin viewport--lg {
+  @media (max-width: $viewport--xl - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--md {
+  @media (max-width: $viewport--lg - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--av {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin viewport--sav {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin viewport--sm {
+  @media (max-width: $viewport--md - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--xs {
+  @media (max-width: $viewport--sm - 1) {
+    @content;
+  }
+}
+
+
+@mixin btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font($font-size, $line-height) {
+  font-size: $font-size * 1px;
+  line-height: $line-height * 1px;
+}
+
+//@mixin space {
+//  font-weight: 400;
+//  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+//}
+
+@mixin pseudo-elem {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin hover {
+  outline: none;
+  cursor: pointer;
+
+  transition: $default-transition-settings;
+}
+
+@mixin not-hover {
+  &:not(:hover) {
+    transition: $default-transition-settings;
+  }
+}

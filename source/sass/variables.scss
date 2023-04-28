@@ -1,0 +1,38 @@
+// Viewports
+//---------------------------------
+
+$viewport--sm:                      480px;
+$viewport--md:                      600px;
+$viewport--lg:                      960px;
+$viewport--xl:                      1024px;
+$viewport--xxl:                     1920px;
+
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com
+
+// Default
+$white: #ffffff;
+$black: #000000;
+$transparent: rgba(0, 0, 0, 0);
+
+// Base
+$black-bg: #0c0e1c;
+$black-pearl-bg: #010203;
+$red: #cb0e0e;
+$blue: #036cca;
+$gray: #e5e5e5;
+
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
