@@ -1,0 +1,35 @@
+.promo {
+  width: 100%;
+  margin-top: -166px;
+  padding-top: 197px;
+  padding-bottom: 74px;
+  min-height: 940px;
+  background-image:
+    url("../img/promo/background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 640px;
+}
+
+.promo__title {
+  @include pt-serif-b;
+  @include font(90, 117);
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.promo__text {
+  @include roboto-b;
+  @include font(20, 28);
+  width: 40%;
+  margin-top: auto;
+  padding: 0;
+}

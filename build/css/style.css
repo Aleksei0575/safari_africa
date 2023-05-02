@@ -3058,28 +3058,34 @@ template {
 
 /* Общие */
 @font-face {
-  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
   font-weight: 700;
-  font-style: normal; }
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff"); }
 
 @font-face {
-  font-family: 'SF Pro Display';
-  font-display: swap;
-  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Space Age Cyrillic Regular';
-  font-display: swap;
-  src: url("../fonts/spaceagecyrillic-regular.woff2") format("woff2"), url("../fonts/spaceagecyrillic-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'PT Serif';
+  src: url("../fonts/ptserifbold.woff2") format("woff2"), url("../fonts/ptserifbold.woff") format("woff"); }
 
 html {
-  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%; }
@@ -3106,8 +3112,8 @@ body {
   padding: 0;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 20px;
   color: #1f1e1e;
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
@@ -3172,7 +3178,151 @@ input:invalid {
     .container {
       padding: 0 20px; } }
 
+.promo {
+  width: 100%;
+  margin-top: -166px;
+  padding-top: 197px;
+  padding-bottom: 74px;
+  min-height: 940px;
+  background-image: url("../img/promo/background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 640px; }
+
+.promo__title {
+  font-weight: 700;
+  font-family: "PT-Serif", "Georgia", serif;
+  font-size: 90px;
+  line-height: 117px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0; }
+
+.promo__text {
+  font-weight: 700;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  width: 40%;
+  margin-top: auto;
+  padding: 0; }
+
+.btn {
+  font-size: 18px;
+  line-height: 21px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+  padding: 18px 54px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 30px;
+  background-color: #886239; }
+  .btn:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .btn:hover, .btn:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e;
+    border-color: #cb0e0e; }
+
 /* Шапка */
+.header {
+  color: white;
+  z-index: 1; }
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0 15px 0; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(285 * 100% / 1120);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.logo__link {
+  width: 25%;
+  margin-right: 3%; }
+
+.logo__text {
+  width: 75%; }
+  .logo__text p + span {
+    font-weight: 400;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 18px;
+    line-height: 21px; }
+
+.logo__name {
+  font-weight: 700;
+  font-family: "PT-Serif", "Georgia", serif;
+  font-size: 19px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0; }
+
+.booking {
+  width: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.booking__phone {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 31px; }
+
+.header__bottom {
+  padding: 25px 0 25px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white; }
+
+.header__bottom-list {
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 /* Подвал */
 /* Карточка товара */
 /* main */
