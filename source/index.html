@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
 
-  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/spaceagecyrillic-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptserifbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="../../project_5/source/sass/fonts.scss">
 </head>
@@ -29,12 +30,14 @@
 <!--              <use xlink:href="#icon-logo"></use>-->
 <!--            </svg>-->
           </a>
-          <p class="logo__name">Сафари <span>ТУРИСТИК</span></p>
-          <span>Турагентство</span>
+          <div class="logo__text">
+            <p class="logo__name">Сафари <span>ТУРИСТИК</span></p>
+            <span>Турагентство</span>
+          </div>
         </div>
         <div class="booking">
           <p class="booking__text">Заказ туров и бронирование:</p>
-          <a class="booking__phone" href="tel:+80508543543">тел. 8-050-8-543-543</a>
+          <a class="booking__phone btn" href="tel:+80508543543">тел. 8-050-8-543-543</a>
         </div>
       </div>
       <nav class="header__bottom">
@@ -62,12 +65,14 @@
     <!--Блок ПРОМО-->
     <section class="promo">
       <div class="container">
-        <h1 class="promo__title">Сафари по Африке</h1>
-        <p class="promo_text">
-          Туры по самомым экзотическим местам
-          Поехали с нами за новыми впечатлениями!
-        </p>
-        <a class="promo__link" href="#">Оставить заявку</a>
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Сафари по Африке</h1>
+          <p class="promo__text">
+            Туры по самомым экзотическим местам
+            Поехали с нами за новыми впечатлениями!
+          </p>
+          <a class="promo__link btn" href="#">Оставить заявку</a>
+        </div>
       </div>
     </section>
 

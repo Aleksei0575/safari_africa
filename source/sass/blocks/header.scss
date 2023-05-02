@@ -1,0 +1,64 @@
+.header {
+  color: white;
+  z-index: 1;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 15px 0;
+}
+
+.logo {
+  display: flex;
+  //justify-content: space-between;
+  width: calc(285 * 100% / 1120);
+  align-items: center;
+}
+
+.logo__link {
+  width: 25%;
+  margin-right: 3%;
+}
+
+.logo__text {
+  width: 75%;
+
+  p + span {
+    @include roboto-r;
+    @include font(18, 21);
+  }
+}
+
+.logo__name {
+  @include pt-serif-b;
+  @include font(19, 26);
+  margin: 0;
+  padding: 0;
+}
+
+.booking {
+  width: 41%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking__phone {
+  @include font(16, 20);
+  padding: 12px 31px;
+}
+
+.header__bottom {
+  padding: 25px 0 25px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.header__bottom-list {
+  @include roboto-r;
+  @include font(16, 18);
+  @include list-reset;
+  display: flex;
+  justify-content: space-around;
+}

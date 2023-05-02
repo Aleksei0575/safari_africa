@@ -72,6 +72,26 @@
   line-height: $line-height * 1px;
 }
 
+@mixin pt-serif-b {
+  font-weight: 700;
+  font-family: "PT-Serif", "Georgia", serif;
+}
+
+@mixin roboto-r {
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+@mixin roboto-m {
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+@mixin roboto-b {
+  font-weight: 700;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
 //@mixin space {
 //  font-weight: 400;
 //  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
