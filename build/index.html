@@ -481,14 +481,73 @@
     </section>
 
     <!--Блок КОНТАКТЫ и ГАРАНТИИ-->
-    <section class="contacts">
+    <section class="booking">
+      <div class="container">
+        <h2 class="booking__title">Забронируйте отдых в Африке</h2>
+        <form class="booking__form form" action="#" method="POST">
+          <div class="form__item form__item-fullname">
+            <label class="visually-hidden" for="full-name">Ваше имя</label>
+            <input id="full-name" type="text" name="full-name" placeholder="Ваше имя" required="">
+          </div>
 
+          <div class="form__item form__item-tel">
+            <label class="visually-hidden" for="tel">Телефон</label>
+            <input id="tel" type="tel" name="tel" placeholder="Телефон" required="">
+          </div>
+
+          <div class="form__item form__item-email">
+            <label class="visually-hidden" for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="E-mail" required="">
+          </div>
+
+          <div class="form__item form__item-text">
+            <label class="visually-hidden" for="message">Комментарий</label>
+            <textarea id="message" name="message" placeholder="Комментарий" required=""></textarea>
+          </div>
+
+          <div class="form__item form__item-consent">
+            <input class="form__item-checkbox" id="consent" type="checkbox" name="consent" required="">
+            <label for="consent">Согласие на обработку персональных данных</label>
+          </div>
+
+          <button class="form__btn btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <!--ФУТЕР-->
   <footer class="footer">
-
+    <div class="container">
+      <div class="footer__logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="img/icon-logo.png" alt="Logo">
+          <!--            <svg width="64" height="60">-->
+          <!--              <use xlink:href="#icon-logo"></use>-->
+          <!--            </svg>-->
+        </a>
+        <p class="logo__name">Сафари <span>ТУРИСТИК</span></p>
+        <span>Турагентство</span>
+      </div>
+      <div class="footer__info">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <b class="footer__item-title">Турагентство «Сафари Туристик»</b>
+            <p class="footer__item-info">© 2021. Все права защищены</p>
+            <a class="footer__item-link" href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="footer__item">
+            <b class="footer__item-title">Адрес:</b>
+            <p class="footer__item-info">г. Киев, ул.Мира, 20, отель «Динамо», 1 этаж</p>
+          </li>
+          <li class="footer__item">
+            <b class="footer__item-title">Заказ туров и бронирование:</b>
+            <a class="footer__item-tel" href="tel:+80508543543">тел. 8-050-8-543-543</a>
+            <a class="footer__item-tel" href="mailto:safari_turistic@gmail.com">e-mail: safari_turistic@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
