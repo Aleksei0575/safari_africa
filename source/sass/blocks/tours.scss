@@ -1,0 +1,22 @@
+.tours {
+  padding: 100px 0 68px;
+}
+
+.tours__list {
+  @include list-reset;
+  margin: 0 0 0 -30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tours__item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 32px;
+  border: 1px solid #d9d9de;
+}
+
+.tours__title{
+  margin-left: 20px;
+}
