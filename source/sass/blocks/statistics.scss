@@ -1,0 +1,27 @@
+.statistics {
+  width: 46%;
+}
+
+.statistics__list{
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  span {
+    @include pt-serif-b;
+    @include font(58, 75);
+    color: #886239;
+  }
+
+  p {
+    @include roboto-m;
+    @include font(20, 26);
+  }
+}

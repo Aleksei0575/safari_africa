@@ -1,0 +1,40 @@
+.premium {
+  margin-bottom: 100px;
+}
+
+.premium__title {
+  @include roboto-b;
+  @include font(36, 46);
+  width: 50%;
+  margin: 0 auto 75px;
+}
+
+.premium__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #d9d9de;
+
+  p {
+    @include roboto-r;
+    @include font(18, 25);
+  }
+}
+
+.premium__content-left {
+  width: 48%;
+
+  b {
+    @include roboto-b;
+  }
+}
+
+.premium__content-right {
+  width: 48%;
+}
+
+.premium__statistics {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+}

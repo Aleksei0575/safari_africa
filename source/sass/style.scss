@@ -11,21 +11,28 @@
 @import "global";
 
 /* Форма */
-
+@import "blocks/form";
 
 /* Блоки */
 @import "blocks/container";
+@import "blocks/logo";
 @import "blocks/promo";
 @import "blocks/btn";
 @import "blocks/tours";
 @import "blocks/main-directions";
 @import "blocks/offers";
+@import "blocks/map";
+@import "blocks/about-safari";
+@import "blocks/gallery";
+@import "blocks/premium";
+@import "blocks/statistics";
+@import "blocks/booking";
 
 /* Шапка */
 @import "blocks/header";
 
 /* Подвал */
-
+@import "blocks/footer";
 
 /* Карточка товара */
 

@@ -72,6 +72,11 @@
   line-height: $line-height * 1px;
 }
 
+@mixin size($width, $height) {
+  width: $width * 1px;
+  height: $height * 1px;
+}
+
 @mixin pt-serif-b {
   font-weight: 700;
   font-family: "PT-Serif", "Georgia", serif;

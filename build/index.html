@@ -227,9 +227,9 @@
             <span>Турагентство</span>
           </div>
         </div>
-        <div class="booking">
-          <p class="booking__text">Заказ туров и бронирование:</p>
-          <a class="booking__phone btn" href="tel:+80508543543">тел. 8-050-8-543-543</a>
+        <div class="booking-block">
+          <p class="booking-block__text">Заказ туров и бронирование:</p>
+          <a class="booking-block__phone btn" href="tel:+80508543543">тел. 8-050-8-543-543</a>
         </div>
       </div>
       <nav class="header__bottom">
@@ -446,7 +446,7 @@
             <a class="offers__link" href="#">
               <img src="img/offers/tanzania.jpg" alt="Живописные виды туров">
               <div class="offers__content offers__content--big">
-                <h3>САМЫЕ ПОПУЛЯРНЫЕ САФАРИ ПАРКИ И ЗАПОВЕДНИКИ ТАНЗАНИИ</h3>
+                <h3>САМЫЕ ПОПУЛЯРНЫЕ САФАРИ ПАРКИ И&nbspЗАПОВЕДНИКИ ТАНЗАНИИ</h3>
                 <p>Танзания</p>
                 <p>7 дней / 6 ночей</p>
                 <p>от 1700 $</p>
@@ -458,7 +458,7 @@
               <img src="img/offers/country_9.jpg" alt="Живописные виды туров">
               <div class="offers__content offers__content--big">
                 <h3>ГРАНДИОЗНОЕ ПРИКЛЮЧЕНИЕ ПО 9 СТРАНАМ АФРИКИ</h3>
-                <p>ЮАР, Замбия, Намибия, Зимбабве, Ботсвана, Мозамбик, Танзания, Кения</p>
+                <p>ЮАР, Замбия, Намибия, Зимбабве, Ботсвана, Мозамбик, Танзания,&nbspКения</p>
                 <p>24 дня / 23 ночи</p>
                 <p>от 6000 $</p>
               </div>
@@ -509,13 +509,15 @@
       <h2 class="map__title visually-hidden">Интерактивная карта</h2>
       <div class="container">
         <h2 class="map__title">Карта Африки</h2>
-        <img class="map__img" src="img/map/map.jpg" alt="Африка на карте">
+        <div class="map__wrapper">
+          <img class="map__img" src="img/map/map.jpg" alt="Африка на карте">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15938215.13607994!2d32.034394700659185!3d-12.767742136453007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1684324582218!5m2!1sru!2sua" width="1120" height="609" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
 
     <!--Блок О САФАРИ ТУРАХ-->
     <section class="about-safari">
-      <h2 class="about-safari__title visually-hidden">Информация о турах</h2>
       <div class="container">
         <div class="about-safari__wrapper">
           <div class="about-safari__content">
@@ -523,6 +525,7 @@
             <p class="about-safari__description">
               Восточная и Южная Африка являются самыми популярными местами, где можно насладиться увлекательным путешествием, под названием сафари. Именно здесь созданы все условия, чтобы туристы могли почувствовать себя частичкой девственной природы Африки. Туры сафари в Африку характеризуются уникальными программами, в рамках которых туристы перемещаются на комфортабельных, специализированных автомобилях или автобусах.
             </p>
+            <a class="about-safari__link" href="#">Читать подробней</a>
           </div>
           <div class="about-safari__video">
             <img class="about-safari__img" src="img/about-safari/about-safari.jpg" alt="Заставка под видео">
@@ -557,8 +560,8 @@
             </div>
           </div>
         </div>
-        <div class="gallery__image">
-          <ul class="gallery__image-list">
+        <div class="gallery__image gallery__slider-block">
+          <ul class="gallery__image-list gallery__slider-container">
             <li class="gallery__image-item">
               <img src="img/gallery/img-1.jpg" alt="Красивые фотографии">
             </li>
@@ -589,10 +592,10 @@
         <div class="premium__content">
           <div class="premium__content-left">
             <p>
-              Сафари тур ? это уникальное путешествие в мир дикой природы, знакомство с многогранной Африкой, наблюдение за дикими животными в их привычной среде обитания.
+              Сафари тур ? это уникальное путешествие в мир дикой природы, знакомство с многогранной Африкой, наблюдение за&nbspдикими животными в их привычной среде обитания.
             </p>
             <p>
-              <span>САФАРИ ТУРИСТИК</span> специализируется на элитном туризме и представляет своим клиентам уникальные программы сафари туров.Среди представленных вариантов можно найти нечто неповторимое, по вашему вкусу.
+              <b>САФАРИ ТУРИСТИК</b> специализируется на элитном туризме и представляет своим клиентам уникальные программы сафари&nbspтуров.Среди представленных вариантов можно найти нечто неповторимое, по вашему вкусу.
             </p>
             <p>
               Если вы желаете отправиться в самое незабываемое путешествие в вашей жизни, побывать в уникальных местах и увидеть то, что удается лицезреть немногим ? тогда сафари туры созданы для вас.
@@ -609,7 +612,7 @@
         </div>
         <div class="premium__statistics">
           <div class="premium__statistics-left statistics">
-            <ul class="statistics__list">
+            <ul class="statistics__list statistics__list-left">
               <li class="statistics__item">
                 <span>16</span>
                 <p>
@@ -676,11 +679,11 @@
           </div>
 
           <div class="form__item form__item-consent">
-            <input class="form__item-checkbox" id="consent" type="checkbox" name="consent" required="">
+            <input class="visually-hidden" id="consent" type="checkbox" name="consent" required="">
             <label for="consent">Согласие на обработку персональных данных</label>
           </div>
 
-          <button class="form__btn btn" type="submit">Отправить заявку</button>
+          <button class="form__btn btn btn--form" type="submit">Отправить заявку</button>
         </form>
       </div>
     </section>
@@ -689,33 +692,37 @@
   <!--ФУТЕР-->
   <footer class="footer">
     <div class="container">
-      <div class="footer__logo">
-        <a class="logo__link" href="#">
-          <img class="logo__img" src="img/icon-logo.png" alt="Logo">
-          <!--            <svg width="64" height="60">-->
-          <!--              <use xlink:href="#icon-logo"></use>-->
-          <!--            </svg>-->
-        </a>
-        <p class="logo__name">Сафари <span>ТУРИСТИК</span></p>
-        <span>Турагентство</span>
-      </div>
-      <div class="footer__info">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <b class="footer__item-title">Турагентство «Сафари Туристик»</b>
-            <p class="footer__item-info">© 2021. Все права защищены</p>
-            <a class="footer__item-link" href="#">Политика конфиденциальности</a>
-          </li>
-          <li class="footer__item">
-            <b class="footer__item-title">Адрес:</b>
-            <p class="footer__item-info">г. Киев, ул.Мира, 20, отель «Динамо», 1 этаж</p>
-          </li>
-          <li class="footer__item">
-            <b class="footer__item-title">Заказ туров и бронирование:</b>
-            <a class="footer__item-tel" href="tel:+80508543543">тел. 8-050-8-543-543</a>
-            <a class="footer__item-tel" href="mailto:safari_turistic@gmail.com">e-mail: safari_turistic@gmail.com</a>
-          </li>
-        </ul>
+      <div class="footer__wrapper">
+        <div class="logo logo--footer">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="img/icon-logo.png" alt="Logo">
+            <!--            <svg width="64" height="60">-->
+            <!--              <use xlink:href="#icon-logo"></use>-->
+            <!--            </svg>-->
+          </a>
+          <div class="logo__text">
+            <p class="logo__name">Сафари <span>ТУРИСТИК</span></p>
+            <span>Турагентство</span>
+          </div>
+        </div>
+        <div class="footer__info">
+          <ul class="footer__list">
+            <li class="footer__item footer__item-agency">
+              <b class="footer__item-title">Турагентство «Сафари Туристик»</b>
+              <p class="footer__item-info">© 2021. Все права защищены</p>
+              <a class="footer__item-link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__item footer__item-address">
+              <b class="footer__item-title">Адрес:</b>
+              <p class="footer__item-info">г. Киев, ул.Мира, 20, отель «Динамо», 1 этаж</p>
+            </li>
+            <li class="footer__item footer__item-booking">
+              <b class="footer__item-title">Заказ туров и бронирование:</b>
+              <a class="footer__item-tel" href="tel:+80508543543">тел. 8-050-8-543-543</a>
+              <a class="footer__item-tel" href="mailto:safari_turistic@gmail.com">e-mail: safari_turistic@gmail.com</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
