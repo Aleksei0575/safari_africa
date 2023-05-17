@@ -1,0 +1,11 @@
+.booking {
+  background-color: #eaeaea;
+  padding: 75px 0 75px 0;
+}
+
+.booking__title {
+  @include roboto-b;
+  @include font(36, 46);
+  width: 50%;
+  margin: 0 auto 45px;
+}

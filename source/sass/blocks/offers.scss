@@ -11,9 +11,12 @@
 
 .offers__list {
   @include list-reset;
+  padding-bottom: 82px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 48px 32px;
+
+  border-bottom: 1px solid #d9d9de;
 
   &--large {
     grid-template-areas:
@@ -82,7 +85,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 16px 21px 19px 24px;
+  padding: 16px 13px 19px 24px;
   display: flex;
   flex-direction: column;
 
@@ -94,13 +97,38 @@
   }
 
   &--small {
+    h3 {
+      @include roboto-m;
+      @include font(18, 23);
+    }
+
     p {
+      @include roboto-b;
+      @include font(16, 20);
       margin: auto 0 0 0;
     }
   }
 
   &--big {
+    h3 {
+      @include roboto-m;
+      @include font(24, 31);
+      margin-bottom: 15px;
+    }
+
+    p {
+      @include roboto-r;
+      @include font(16, 20);
+      margin: 0;
+    }
+
+    h3 ~ p {
+      margin-bottom: 15px;
+    }
+
     p:last-child {
+      @include roboto-b;
+      @include font(16, 20);
       margin: auto 0 0 0;
     }
   }

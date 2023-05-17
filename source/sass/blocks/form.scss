@@ -1,0 +1,128 @@
+.form {
+  width: 74%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.form__item {
+  width: 30%;
+
+  input {
+    width: 100%;
+    padding: 11px 14px;
+
+    border: none;
+    caret-color: red;
+    //appearance: none;
+    @include not-hover;
+    cursor: pointer;
+
+    &::placeholder {
+      @include roboto-r;
+      @include font(16, 21);
+      color: #c4c4c4;
+    }
+
+    &:hover,
+    &:focus {
+      @include hover;
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+  }
+}
+
+.form__item-text {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 67px;
+
+  textarea {
+    width: 100%;
+    min-height: 112px;
+    padding: 11px 14px;
+
+    border: none;
+    caret-color: red;
+    appearance: none;
+    @include not-hover;
+    cursor: pointer;
+    resize: none;
+
+    &::placeholder {
+      @include roboto-r;
+      @include font(16, 21);
+      color: #c4c4c4;
+    }
+
+    &:hover,
+    &:focus {
+      @include hover;
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+  }
+}
+
+.form__item-consent {
+  width: 46%;
+  order: 1;
+
+  label {
+    position: relative;
+    display: block;
+    padding-top: 22px;
+    padding-left: 35px;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      @include pseudo-elem;
+      top: 20px;
+      left: 0;
+      align-self: flex-start;
+      width: 26px;
+      height: 26px;
+      border: 2px solid #c4c4c4;
+    }
+
+    &::after {
+      @include pseudo-elem;
+      top: 21px;
+      left: 8px;
+      display: none;
+
+      @include size(10, 15);
+      border: 1px solid $black;
+      border-left: none;
+      border-top: none;
+      transform: rotate(45deg);
+    }
+
+    &:hover,
+    &:focus {
+      @include hover;
+      opacity: 0.8;
+    }
+
+    &:active {
+      @include hover;
+      opacity: 0.6;
+    }
+  }
+}
+
+.form__item-consent input[type="checkbox"]:checked ~ label::after {
+  display: block;
+}
+
+.form__item-consent input[type="checkbox"]:focus ~ label::before {
+  background-color: rgba(white, 0.2);
+}

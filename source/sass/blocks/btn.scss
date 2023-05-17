@@ -21,6 +21,11 @@
     background-color: #584631;
   }
 
+  &--form {
+    border: 0;
+    padding: 18px 65px;
+  }
+
   //@include viewport--av {
   //  @include font(18, 22);
   //  padding: 10px 20px;

@@ -1,0 +1,43 @@
+.about-safari {
+  margin-bottom: 100px;
+}
+
+.about-safari__wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2.5%;
+}
+
+.about-safari__content {
+  width: 40%;
+}
+
+.about-safari__title {
+  @include roboto-m;
+  @include  font(36, 42);
+  margin: 0 0 25px 0;
+}
+
+.about-safari__description {
+  @include roboto-r;
+  @include  font(18, 25);
+  margin-bottom: 55px;
+}
+
+.about-safari__link{
+  color: #c4c4c4;
+  text-decoration: underline;
+}
+
+.about-safari__video{
+  width: 57%;
+  position: relative;
+}
+
+.about-safari__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 73px;
+  transform: translate(-50%, -50%);
+}
