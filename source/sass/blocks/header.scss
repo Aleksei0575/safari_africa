@@ -9,22 +9,7 @@
   padding: 15px 0 15px 0;
 }
 
-
-
-.booking-block {
-  width: 41%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.booking-block__phone {
-  @include font(16, 20);
-  padding: 12px 31px;
-}
-
 .header__bottom {
-  padding: 25px 0 25px 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
@@ -35,4 +20,16 @@
   @include list-reset;
   display: flex;
   justify-content: space-around;
+}
+
+.head__bottom-link {
+  display: block;
+  padding: 25px 0;
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+  }
 }

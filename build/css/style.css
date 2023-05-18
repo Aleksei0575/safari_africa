@@ -3307,6 +3307,9 @@ input:invalid {
     padding-left: 35px;
     background-color: transparent;
     cursor: pointer; }
+    .form__item-consent label:not(:hover) {
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease; }
     .form__item-consent label::before {
       position: absolute;
       content: "";
@@ -3337,6 +3340,7 @@ input:invalid {
       cursor: pointer;
       -webkit-transition: 0.3s ease;
       transition: 0.3s ease;
+      color: #cb0e0e;
       opacity: 0.8; }
     .form__item-consent label:active {
       outline: none;
@@ -3489,6 +3493,23 @@ input:invalid {
     border: 0;
     padding: 18px 65px; }
 
+.booking-block {
+  width: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.booking-block__phone {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 31px; }
+
 .tours {
   padding: 100px 0 68px; }
 
@@ -3509,6 +3530,16 @@ input:invalid {
   margin-left: 30px;
   margin-bottom: 32px;
   border: 1px solid #d9d9de; }
+  .tours__item:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .tours__item:hover, .tours__item:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-box-shadow: -2px 1px 15px 0 #a9adb5, 2px 15px 25px 0 #a9adb5;
+            box-shadow: -2px 1px 15px 0 #a9adb5, 2px 15px 25px 0 #a9adb5; }
 
 .tours__title {
   margin-left: 20px; }
@@ -3926,25 +3957,7 @@ input:invalid {
           justify-content: space-between;
   padding: 15px 0 15px 0; }
 
-.booking-block {
-  width: 41%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.booking-block__phone {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 12px 31px; }
-
 .header__bottom {
-  padding: 25px 0 25px 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white; }
 
@@ -3961,6 +3974,19 @@ input:invalid {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+
+.head__bottom-link {
+  display: block;
+  padding: 25px 0; }
+  .head__bottom-link:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .head__bottom-link:hover, .head__bottom-link:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e; }
 
 /* Подвал */
 .footer {
@@ -4013,6 +4039,15 @@ input:invalid {
   margin-bottom: 5px;
   display: block;
   text-decoration: underline; }
+  .footer__item a:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .footer__item a:hover, .footer__item a:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e; }
 
 .footer__item-agency {
   width: 20%; }

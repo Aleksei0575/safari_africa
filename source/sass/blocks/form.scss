@@ -79,6 +79,7 @@
     display: block;
     padding-top: 22px;
     padding-left: 35px;
+    @include not-hover;
 
     background-color: transparent;
     cursor: pointer;
@@ -109,11 +110,13 @@
     &:hover,
     &:focus {
       @include hover;
+      color: $red;
       opacity: 0.8;
     }
 
     &:active {
       @include hover;
+      //color: $red;
       opacity: 0.6;
     }
   }

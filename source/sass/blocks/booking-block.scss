@@ -1,0 +1,11 @@
+.booking-block {
+  width: 41%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-block__phone {
+  @include font(16, 20);
+  padding: 12px 31px;
+}
