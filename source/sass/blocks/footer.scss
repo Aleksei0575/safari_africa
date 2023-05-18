@@ -37,6 +37,14 @@
     margin-bottom: 5px;
     display: block;
     text-decoration: underline;
+
+    @include not-hover;
+
+    &:hover,
+    &:focus {
+      @include hover;
+      color: $red;
+    }
   }
 }
 

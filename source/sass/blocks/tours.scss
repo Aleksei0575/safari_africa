@@ -15,6 +15,15 @@
   margin-left: 30px;
   margin-bottom: 32px;
   border: 1px solid #d9d9de;
+
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    box-shadow: -2px 1px 15px 0 #a9adb5,
+    2px 15px 25px 0 #a9adb5;
+  }
 }
 
 .tours__title{
