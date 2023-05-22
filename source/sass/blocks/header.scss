@@ -19,7 +19,7 @@
   @include font(16, 18);
   @include list-reset;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .head__bottom-link {

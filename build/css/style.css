@@ -3078,12 +3078,6 @@ template {
   font-display: swap;
   src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff"); }
 
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: 'PT Serif';
-  src: url("../fonts/ptserifbold.woff2") format("woff2"), url("../fonts/ptserifbold.woff") format("woff"); }
-
 html {
   font-family: "Roboto", "Arial", sans-serif;
   -webkit-box-sizing: border-box;
@@ -3358,9 +3352,9 @@ input:invalid {
 /* Блоки */
 .container {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0 10px; }
   @media (max-width: 1250px) {
     .container {
       padding: 0 40px; } }
@@ -3397,7 +3391,7 @@ input:invalid {
 
 .logo__name {
   font-weight: 700;
-  font-family: "PT-Serif", "Georgia", serif;
+  font-family: "PT Serif", "Georgia", serif;
   font-size: 19px;
   line-height: 26px;
   margin: 0;
@@ -3428,7 +3422,7 @@ input:invalid {
 
 .promo__title {
   font-weight: 700;
-  font-family: "PT-Serif", "Georgia", serif;
+  font-family: "PT Serif", "Georgia", serif;
   font-size: 90px;
   line-height: 117px;
   width: 85%;
@@ -3921,7 +3915,7 @@ input:invalid {
   text-align: center; }
   .statistics__item span {
     font-weight: 700;
-    font-family: "PT-Serif", "Georgia", serif;
+    font-family: "PT Serif", "Georgia", serif;
     font-size: 58px;
     line-height: 75px;
     color: #886239; }
@@ -3972,8 +3966,9 @@ input:invalid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
 
 .head__bottom-link {
   display: block;
