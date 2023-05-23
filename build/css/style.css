@@ -3078,6 +3078,13 @@ template {
   font-display: swap;
   src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff"); }
 
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Serif";
+  font-display: swap;
+  src: local("PT Serif"), local("PTSerif-Bold"), url("../fonts/ptserifbold.woff2") format("woff2"), url("../fonts/ptserifbold.woff") format("woff"); }
+
 html {
   font-family: "Roboto", "Arial", sans-serif;
   -webkit-box-sizing: border-box;
@@ -3970,13 +3977,13 @@ input:invalid {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
 
-.head__bottom-link {
+.header__bottom-link {
   display: block;
   padding: 25px 0; }
-  .head__bottom-link:not(:hover) {
+  .header__bottom-link:not(:hover) {
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease; }
-  .head__bottom-link:hover, .head__bottom-link:focus {
+  .header__bottom-link:hover, .header__bottom-link:focus {
     outline: none;
     cursor: pointer;
     -webkit-transition: 0.3s ease;
