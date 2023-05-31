@@ -32,6 +32,10 @@
 .about-safari__video{
   width: 57%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
 }
 
 .about-safari__video-play {
