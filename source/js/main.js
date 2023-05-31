@@ -53,6 +53,31 @@ $('.offer-slider').slick({
 			},
 		]
 });
+
+'use strict';
+// меню
+(function () {
+  var navBtn = document.querySelector('.header__open-menu');
+  var nav = document.querySelector('.header__nav');
+
+  if (navBtn && nav) {
+    navBtn.addEventListener('click', openNav);
+  }
+
+  function openNav(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
+    if (navBtn.classList.contains('header__close-menu')) {
+      navBtn.classList.remove('header__close-menu');
+      nav.style.display = '';
+    } else {
+      navBtn.classList.add('header__close-menu');
+      nav.style.display = 'block';
+    }
+  }
+})();
+
 'use strict';
 // меню
 (function () {
