@@ -1,0 +1,22 @@
+.gallery-slider {
+  //width: 100%;
+}
+
+.gallery-slider__arrows {
+  position: absolute;
+  top: -15%;
+  //transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+
+  &--left {
+    right: 60px;
+  }
+}
+
+//.gallery-slider__img {
+//  @include viewport--xs {
+//    width: 90%;
+//  }
+//}

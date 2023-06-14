@@ -2,7 +2,7 @@
   margin-bottom: 100px;
   background-color: #886239;
   color: $white;
-  padding: 49px 0 68px 0;
+  padding: 49px 0 68px;
 }
 
 .gallery__top-wrapper {
@@ -31,6 +31,14 @@
   @include roboto-r;
   @include font(16, 18);
   width: 46%;
+  text-decoration: underline;
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+  }
 }
 
 .gallery__controls-button {
@@ -55,4 +63,15 @@
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 32px;
+  min-height: 256px;
+
+  a {
+    min-height: inherit;
+  }
+
+  img {
+    width: 100%;
+    min-height: inherit;
+    object-fit: cover;
+  }
 }
