@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include viewport--sav {
+    min-height: auto;
+  }
 }
 
 .promo__wrapper {
@@ -15,6 +19,14 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 780px;
+
+  @include viewport--sav {
+    min-height: 600px;
+  }
+
+  @include viewport--sm {
+    min-height: 450px;
+  }
 }
 
 .promo__title {
@@ -23,6 +35,27 @@
   width: 85%;
   margin: 0 auto;
   padding: 0;
+
+  @include viewport--lav {
+    @include font(80, 97);
+  }
+
+  @include viewport--lg {
+    @include font(63, 87);
+    margin-bottom: 80px;
+  }
+
+  @include viewport--sav {
+    font-size: 35px;
+    line-height: 47px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    width: 45%;
+  }
+
+  @include viewport--xs {
+    width: 100%;
+  }
 }
 
 .promo__text {
@@ -31,6 +64,26 @@
   width: 40%;
   margin-top: auto;
   padding: 0;
+
+  @include viewport--lav {
+    @include font(18, 24);
+  }
+
+  @include viewport--lg {
+    @include font(16, 22);
+    width: 66%;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+
+  @include viewport--sav {
+    width: 45%;
+    color: $white;
+  }
+
+  @include viewport--xs {
+    width: 100%;
+  }
 }
 
 .promo__link {

@@ -1,5 +1,9 @@
 .tours {
   padding: 100px 0 68px;
+
+  @include  viewport--lg {
+    padding: 50px 0 50px;
+  }
 }
 
 .tours__list {
@@ -24,8 +28,30 @@
     box-shadow: -2px 1px 15px 0 #a9adb5,
     2px 15px 25px 0 #a9adb5;
   }
+
+  @include viewport--av {
+    width: calc(100% / 3 - 30px);
+  }
+
+  @include viewport--sav {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @include viewport--xs {
+    width: calc(100% / 1 - 30px);
+  }
 }
 
 .tours__title{
   margin-left: 20px;
+}
+
+.tours__link {
+  width: 100%;
+
+  img {
+    @include viewport--sav {
+      width: inherit;
+    }
+  }
 }

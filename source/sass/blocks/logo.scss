@@ -7,20 +7,66 @@
   &--footer {
     width: 25%;
     margin: 0 auto 69px;
+
+    @include viewport--lg {
+      //flex: 0 0 30%;
+      width: 40%;
+    }
+
+    @include viewport--sav {
+      width: 100%;
+      text-align: center;
+
+      .logo__link {
+        display: none;
+      }
+
+      .logo__text {
+        width: 100%;
+      }
+    }
+  }
+
+  @include viewport--lav {
+    //width: 100%;
+    flex: 0 0 30%;
+  }
+
+  @include viewport--av {
+    flex: 0 0 40%;
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
+    flex: 1 0 50%;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 
 .logo__link {
   width: 25%;
   margin-right: 3%;
+
+  @include viewport--sm {
+    display: none;
+  }
 }
 
 .logo__text {
-  width: 75%;
+  width: 77%;
 
   p + span {
     @include roboto-r;
     @include font(18, 21);
+
+    @include viewport--xs {
+      @include font(16, 21);
+    }
+  }
+
+  @include viewport--sm {
+    width: 100%;
   }
 }
 
@@ -29,4 +75,8 @@
   @include font(19, 26);
   margin: 0;
   padding: 0;
+
+  @include viewport--xs {
+    @include font(16, 21);
+  }
 }

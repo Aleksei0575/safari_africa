@@ -1,5 +1,9 @@
 .offers {
   padding: 100px 0;
+
+  @include  viewport--lg {
+    padding: 50px 0;
+  }
 }
 
 .offers__title {
@@ -7,6 +11,19 @@
   @include font(34, 42);
   width: 41%;
   margin: 0 auto 40px;
+
+  @include viewport--lav {
+    width: 45%;
+  }
+
+  @include  viewport--lg {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include viewport--xs {
+    @include font(23, 33);
+  }
 }
 
 .offers__list {
@@ -24,6 +41,42 @@
       "sm3 sm4 big1 big1"
       "big2 big2 sm5 sm6"
       "big2 big2 sm7 sm8";
+
+    @include viewport--av {
+      grid-template-areas:
+      "sm1 sm2"
+      "sm3 sm4"
+      "big1 big1"
+      "big1 big1"
+      "sm5 sm6"
+      "sm7 sm8"
+      "big2 big2"
+      "big2 big2";
+    }
+
+    @include viewport--xs {
+      grid-template-areas:
+      "sm1"
+      "sm2"
+      "sm3"
+      "sm4"
+      "big1"
+      "sm5"
+      "sm6"
+      "sm7"
+      "sm8"
+      "big2";
+    }
+  }
+
+  @include viewport--av {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 50px;
+  }
+
+  @include viewport--xs {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 30px;
   }
 }
 
