@@ -26,10 +26,10 @@
     padding: 18px 65px;
   }
 
-  //@include viewport--av {
-  //  @include font(18, 22);
-  //  padding: 10px 20px;
-  //}
+  @include viewport--av {
+    //@include font(13, 30);
+    padding: 13px 30px;
+  }
   //
   //@include viewport--sm {
   //  @include font(14, 18);

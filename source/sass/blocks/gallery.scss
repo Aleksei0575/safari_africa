@@ -18,13 +18,31 @@
   width: 20%;
   margin: 0;
   padding: 0;
+
+  @include viewport--xs {
+    width: 75%;
+    @include font(23, 33);
+  }
 }
 
-.gallery__controls{
+.gallery__controls {
   display: flex;
   justify-content: space-between;
   width: 26%;
   align-items: center;
+
+  @include viewport--lg {
+    width: 30%;
+  }
+
+  @include viewport--av {
+    width: 36%;
+  }
+
+  @include viewport--sav {
+    width: 60%;
+    justify-content: flex-end;
+  }
 }
 
 .gallery__controls-link{
@@ -39,6 +57,19 @@
     @include hover;
     color: $red;
   }
+
+  @include viewport--lav {
+    width: 55%;
+  }
+
+  @include viewport--sav {
+    text-align: end;
+  }
+
+  @include viewport--xs {
+    width: 100%;
+    @include font(14, 16);
+  }
 }
 
 .gallery__controls-button {
@@ -48,6 +79,10 @@
 
   svg {
     fill: transparent;
+  }
+
+  @include viewport--sav {
+    width: 0;
   }
 }
 
@@ -73,5 +108,13 @@
     width: 100%;
     min-height: inherit;
     object-fit: cover;
+  }
+
+  @include viewport--av {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @include viewport--xs {
+    width: calc(100% / 1 - 30px);
   }
 }

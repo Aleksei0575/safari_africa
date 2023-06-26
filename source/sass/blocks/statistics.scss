@@ -6,6 +6,14 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+
+  @include viewport--lg {
+    column-gap: 5%;
+  }
+
+  @include viewport--sav {
+    flex-direction: column;
+  }
 }
 
 .statistics__item {
@@ -18,10 +26,31 @@
     @include pt-serif-b;
     @include font(58, 75);
     color: #886239;
+
+    @include viewport--md {
+      @include font(40, 57);
+    }
+
+    @include viewport--sav {
+      @include font(40, 50);
+    }
+
+    @include viewport--xs {
+      @include font(25, 35);
+    }
   }
 
   p {
     @include roboto-m;
-    @include font(20, 26);
+    @include font(20, 28);
+
+
+    @include viewport--av {
+      @include font(16, 24);
+    }
+
+    @include viewport--xs {
+      @include font(14, 16);
+    }
   }
 }

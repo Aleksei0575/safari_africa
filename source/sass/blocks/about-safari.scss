@@ -1,27 +1,48 @@
 .about-safari {
   margin-bottom: 100px;
+
+  @include viewport--lg {
+    margin-bottom: 50px;
+  }
 }
 
 .about-safari__wrapper {
   display: flex;
   justify-content: space-between;
   column-gap: 2.5%;
+
+  @include viewport--lg {
+    flex-direction: column;
+  }
 }
 
 .about-safari__content {
   width: 40%;
+
+  @include viewport--lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 .about-safari__title {
   @include roboto-m;
   @include  font(36, 42);
   margin: 0 0 25px 0;
+
+  @include viewport--xs {
+    @include font(23, 33);
+  }
 }
 
 .about-safari__description {
   @include roboto-r;
   @include  font(18, 25);
   margin-bottom: 55px;
+
+  @include viewport--lg {
+    margin-bottom: 15px;
+  }
 }
 
 .about-safari__link{
@@ -29,13 +50,22 @@
   text-decoration: underline;
 }
 
-.about-safari__video{
+.about-safari__video {
   width: 57%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 400px;
+
+  img {
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  @include viewport--lg {
+    width: 100%;
+  }
 }
 
 .about-safari__video-play {

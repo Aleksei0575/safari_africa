@@ -4,7 +4,7 @@
 
 .gallery-slider__arrows {
   position: absolute;
-  top: -15%;
+  top: -85px;
   //transform: translateY(-50%);
   right: 0;
   cursor: pointer;
@@ -12,6 +12,19 @@
 
   &--left {
     right: 60px;
+  }
+
+  @include viewport--av {
+    //top: -86px;
+    width: 40px
+  }
+
+  @include viewport--sav {
+    top: -47px;
+  }
+
+  @include viewport--xs {
+    width: 30px;
   }
 }
 

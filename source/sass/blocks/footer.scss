@@ -2,6 +2,10 @@
   padding: 77px 0 80px 0;
   color: $white;
   background-color: #1f1e1e;
+
+  @include viewport--lg {
+    padding: 50px 0 30px 0;
+  }
 }
 
 .footer__wrapper {
@@ -15,6 +19,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .footer__item {
@@ -46,14 +54,46 @@
       color: $red;
     }
   }
+
+  @include viewport--av {
+    margin-bottom: 2%;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 5%;
+  }
 }
 
 .footer__item-agency{
   width: 20%;
+
+  @include viewport--lg {
+    width: 33%;
+  }
+
+  @include viewport--av {
+    width: 50%;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+  }
 }
 
 .footer__item-address {
   width: 15%;
+
+  @include viewport--lg {
+    width: 33%;
+  }
+
+  @include viewport--av {
+    width: 50%;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+  }
 }
 
 .footer__item-booking {
@@ -62,5 +102,21 @@
   a {
     padding-left: 30px;
     text-decoration: none;
+
+    @include viewport--sm {
+      padding-left: 0;
+    }
+  }
+
+  @include viewport--lg {
+    width: 33%;
+  }
+
+  @include viewport--av {
+    width: 50%;
+  }
+
+  @include viewport--sm {
+    width: 100%;
   }
 }

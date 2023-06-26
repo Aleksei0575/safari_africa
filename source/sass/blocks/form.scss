@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+
+  @include viewport--sav {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .form__item {
@@ -33,6 +38,11 @@
         color: $red;
       }
     }
+  }
+
+  @include viewport--sav {
+    width: 100%;
+    margin-bottom: 28px;
   }
 }
 
@@ -68,11 +78,20 @@
       }
     }
   }
+
+  @include viewport--sav {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 }
 
 .form__item-consent {
   width: 46%;
   order: 1;
+
+  input {
+    width: auto;
+  }
 
   label {
     position: relative;
@@ -119,6 +138,19 @@
       //color: $red;
       opacity: 0.6;
     }
+
+    @include viewport--lav {
+      @include font(14, 17);
+    }
+  }
+
+  @include viewport--lav {
+    width: 47%;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+    order: 0;
   }
 }
 

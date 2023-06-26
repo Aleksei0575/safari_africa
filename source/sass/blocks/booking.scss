@@ -8,4 +8,17 @@
   @include font(36, 46);
   width: 50%;
   margin: 0 auto 45px;
+
+  @include viewport--lav {
+    width: 56%;
+  }
+
+  @include viewport--lg {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include viewport--xs {
+    @include font(23, 33);
+  }
 }

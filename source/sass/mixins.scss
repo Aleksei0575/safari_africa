@@ -7,16 +7,16 @@
 }
 
 @mixin viewport--lav {
-  @media (max-width: 1250px) {
+  @media (max-width: 1125px) {
     @content;
   }
 }
 
-@mixin viewport--mav {
-  @media (max-width: 1135px) {
-    @content;
-  }
-}
+//@mixin viewport--mav {
+//  @media (max-width: 1135px) {
+//    @content;
+//  }
+//}
 
 @mixin viewport--lg {
   @media (max-width: $viewport--xl - 1) {
